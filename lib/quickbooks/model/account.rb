@@ -33,7 +33,7 @@ module Quickbooks
       xml_accessor :account_type, :from => 'AccountType'
       xml_accessor :account_sub_type, :from => 'AccountSubType'
 
-      xml_accessor :acct_num, :from => 'AcctNum'
+      xml_accessor :acct_num, :from => 'AcctNum', :as => BaseReference
       xml_accessor :bank_num, :from => 'BankNum'
 
       xml_accessor :current_balance, :from => 'CurrentBalance', :as => BigDecimal, :to_xml => to_xml_big_decimal
